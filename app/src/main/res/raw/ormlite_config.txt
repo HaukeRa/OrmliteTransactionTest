@@ -1,0 +1,47 @@
+#
+# generated on 2018/03/16 02:24:14
+#
+# --table-start--
+dataClass=de.haukera.ormlitetest.tables.BaseTable
+tableName=basetable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=de.haukera.ormlitetest.tables.ChildTable
+tableName=childtable
+# --table-fields-start--
+# --field-start--
+fieldName=dummyField
+# --field-end--
+# --field-start--
+fieldName=parent
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=de.haukera.ormlitetest.tables.ParentTable
+tableName=parenttable
+# --table-fields-start--
+# --field-start--
+fieldName=children
+foreignCollection=true
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
